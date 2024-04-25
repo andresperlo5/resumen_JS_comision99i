@@ -60,3 +60,61 @@ const cuenta = {
     console.log(`el saldo de la cuenta es: ${this.saldo}`);
   },
 };
+
+const alumnos = [
+  {
+    id: 1,
+    nombre: "Andres",
+    apellido: "Perlo",
+    domicilio: "Las talitas",
+  },
+  {
+    id: 2,
+    nombre: "Maxi",
+    apellido: "Busi",
+    domicilio: "Yerba buena",
+  },
+  {
+    id: 3,
+    nombre: "Hugo",
+    apellido: "Bravo",
+    domicilio: "San Miguel de Tucuman",
+  },
+  {
+    id: 4,
+    nombre: "Jose",
+    apellido: "Baza",
+    domicilio: "Tafi Viejo",
+  },
+  {
+    id: 5,
+    nombre: "Milagros",
+    apellido: "Nieva",
+    domicilio: "San Miguel de Tucuman",
+  },
+];
+
+const nuevoAlumno = () => {
+  const newId = alumnos[alumnos.length - 1].id + 1;
+  const nombre = prompt("Ingrese su nombre");
+  const apellido = prompt("Ingrese su apellido");
+  const domicilio = prompt("Ingrese su domicilio");
+
+  const nuevoAlumno = {
+    id: newId,
+    nombre,
+    apellido,
+    domicilio,
+  };
+
+  alumnos.push(nuevoAlumno);
+  console.log(alumnos);
+};
+
+const filtrarAlumno = (idAlumno) => {
+  const alumno = alumnos.find((alumno) => alumno.id === idAlumno);
+  console.log(alumno);
+};
+
+/* const id = crypto.randomUUID();
+console.log(id); */

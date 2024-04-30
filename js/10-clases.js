@@ -12,6 +12,8 @@ class Persona {
   }
 }
 
+/* La clase retorna un objeto */
+
 const persona1 = new Persona("Andres", "Perlo", "Las talitas");
 const persona2 = new Persona("Maxi", "Busi", "Yerba Buena");
 console.log(persona1);

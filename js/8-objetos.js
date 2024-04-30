@@ -110,7 +110,10 @@ const nuevoAlumno = () => {
   alumnos.push(nuevoAlumno);
   console.log(alumnos);
 };
-
+/* 
+filter - retorna un nuevo array
+find - retorna el objeto completo del elemento
+*/
 const filtrarAlumno = (idAlumno) => {
   const alumno = alumnos.find((alumno) => alumno.id === idAlumno);
   console.log(alumno);
